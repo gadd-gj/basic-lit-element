@@ -1,0 +1,18 @@
+{
+  "name": "intro-litelement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "es-dev-server --app-index index.html --node-resolve --watch --open"
+  },
+  "author": "Gaddiel Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^3.2.2"
+  },
+  "devDependencies": {
+    "es-dev-server": "^2.1.0"
+  }
+}

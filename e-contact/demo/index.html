@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../e-contact.js';
+    import '../e-contact-list.js';
+  </script>
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li>
+      <e-contact email="some_email@mail.com" nombre="alguien"></e-contact>
+    </li>
+    <li>
+      <e-contact email="gaddiel@mail.com" nombre="Gaddiel"></e-contact>
+    </li>
+  </ul>
+
+  <hr/>
+
+  <e-contact-list></e-contact-list>
+
+</body>
+
+</html>

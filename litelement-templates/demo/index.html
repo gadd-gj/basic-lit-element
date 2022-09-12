@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../litelement-templates.js';
+
+    const title = 'Hello owc World!';
+    render(
+      html`
+        <litelement-templates .title=${title}>
+          some light-dom
+        </litelement-templates>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
