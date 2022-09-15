@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+
+    host-element {
+      display: inline-block;
+      background-color: coral;
+    }
+    p {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <h2>estilos de elemento host</h2>
+
+  <host-element></host-element>
+
+  <host-element hidden></host-element>
+  
+  <host-element class="blue"></host-element>
+
+  <p>parrafo</p>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../host-element.js';
+  </script>
+</body>
+</html>

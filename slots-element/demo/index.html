@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+
+    slots-element div {
+      border-style: dotted;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <p>cambiando fuera del tree</p>
+
+  <slots-element>
+    <div>stylable with ::slotted ()</div>
+  </slots-element>
+
+  <slots-element>
+    <div>
+      <p>Not stylable with ::slotted() </p>
+    </div>
+  </slots-element>  
+
+
+
+  <hr>
+
+  <slots-element>
+    <p>Slotted pargraph</p>
+    <span slot="hi">Slotted span inside a div</span>
+  </slots-element>
+
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../slots-element.js';
+  </script>
+</body>
+
+</html>
